@@ -31,6 +31,6 @@
     //format as best as possible for readability.
     //use printf when debugging, not echo or print.
     printf('New Connection takes -> %s ms'.PHP_EOL, $new_time*1000);
-    printf('Old Connection takes -> %s ms'.PHP_EOL, $old_time*1000);
-    printf('You saved %s ms'.PHP_EOL, ($old_time - $new_time)*1000);
-    printf('New connection only takes %s%% of old connection'.PHP_EOL, ($new_time/$old_time)*100);
+    printf('<br>Old Connection takes -> %s ms'.PHP_EOL, $old_time*1000);
+    printf('<br>You saved %s ms'.PHP_EOL, ($old_time - $new_time)*1000);
+    printf('<br>New connection only takes %s%% of the Old connection'.PHP_EOL, ($new_time/$old_time)*100);
