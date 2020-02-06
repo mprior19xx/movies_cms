@@ -11,7 +11,6 @@ class Database
     private $password = "";
 
     private static $instance = null;
-
     public $conn;
 
     private function __construct(){
@@ -39,17 +38,20 @@ class Database
             );
             exit;
         }
+
+
     }
 
     public static function getInstance(){
         if(!self::$instance){
             self::$instance = new Database();
         }
+
         return self::$instance;
     }
-
+    // get the database connection
     public function getConnection()
-    {
+    {        
         return $this->conn;
     }
 }
